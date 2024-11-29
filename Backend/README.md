@@ -1,6 +1,7 @@
 Backend To-Do Application
 
 Table of Contents
+
 Overview
 Features
 Technologies Used
@@ -9,12 +10,17 @@ Usage
 API Endpoints
 Contributing
 License
+
 Overview
+
 This Backend To-Do Application is a powerful, RESTful API built with modern tools to help manage tasks effectively. It features robust authentication, secure data storage, and seamless API communication. Designed to work efficiently with any front-end framework, it leverages Node.js and Express.js for scalable backend architecture.
 
 Features
+
 User Authentication: Registration, login, and token-based authentication using JWT.
+
 Task Management: Create, update, delete, and retrieve tasks.
+
 Data Security: Password hashing with Bcrypt.
 Logging: Request logging with Morgan.
 Cross-Origin Support: Enabled via CORS.

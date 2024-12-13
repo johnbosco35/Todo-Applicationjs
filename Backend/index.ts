@@ -1,12 +1,15 @@
 import express, { Application } from "express"
+import { DBconnect } from "./config/db";
+import { environmentVariable } from "./env/enviroment";
 
 
 const app: Application = express();
 
-const port: Number = 5000;
+const port: Number | any = process.env.PORT;
 
-const server = app.listen(port, () =>{
+const server = app.listen(environmentVariable, () =>{
     console.log(`Server is running on port ${port}`);
+    DBconnect()
 })
 
 process.on("unhandledRejection", (error: any) =>{

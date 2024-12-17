@@ -1,12 +1,12 @@
 import { Types } from "mongoose";
 
-export interface IUser{
+export interface user{
     name: string;
     email: string;
     password: string;
 }
 
-export interface ITodo {
+export interface todo {
     user: Types.ObjectId;
     title: string;
     description: string;

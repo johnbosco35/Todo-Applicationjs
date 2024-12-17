@@ -8,3 +8,5 @@ router.post("/register", register);
 router.get("/oneUser/:userID", getOneUser);
 router.get("/allusers", getAllUser);
 router.post("/login", login)
+
+export default router;

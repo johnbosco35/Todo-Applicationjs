@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 import { user } from "../util/interfaces";
+import { login } from "../Controller/authController";
+import { router } from "../router/authRouter";
 
 
 interface IUser extends user, mongoose.Document {}
@@ -34,3 +36,4 @@ const UserSchema = new mongoose.Schema<user>(
 )
 
 export default mongoose.model("User", UserSchema);
+router.post("/login", login);

@@ -3,7 +3,7 @@ import { protect } from "../middleware/authMiddleWare";
 import { createTodo, deleteTodo, getTodos, updateTodo } from "../Controller/todoController";
 
 
-const router = Router();
+ const router = Router();
 
 router.use(protect);
 

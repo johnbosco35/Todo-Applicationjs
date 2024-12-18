@@ -8,8 +8,8 @@ import { createTodo, deleteTodo, getTodos, updateTodo } from "../Controller/todo
 router.use(protect);
 
 router.get("/get-todos", getTodos);
-router.post("/createTask", createTodo);
-router.put("/updateTask/:id", updateTodo);
-router.delete("/deleteTask/:id", deleteTodo);
+router.post("/todos", createTodo);
+router.put("/todos/:id", updateTodo);
+router.delete("/todos/:id", deleteTodo);
 
 export default router;
